@@ -1,6 +1,8 @@
 "use client"
 
+import Header from "@/components/Header";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
+import Image from "next/image";
 import { useState } from "react";
 
 export default function AboutSection() {
@@ -43,6 +45,29 @@ const faqData = [
 
   return (
     <main>
+
+         <div className="relative">
+                <Header />
+                <div className="relative w-full h-auto overflow-hidden">
+                  <div className="relative h-[460px] w-full">
+                    <Image
+                      src="/assets/images/about.jpg"
+                      alt="Contact"
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black/50" />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                      <h1 className="text-6xl md:text-5xl font-regular mb-4 font-secondary ">
+                        About Us
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
     <section className="py-16 px-4 md:px-8 lg:py-24 bg-gray-50">
       <div className="mx-auto max-w-4xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">

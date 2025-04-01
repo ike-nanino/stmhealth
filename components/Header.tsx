@@ -39,8 +39,8 @@ function Header() {
       }`}
     >
       <div className="lg:hidden flex items-center justify-between w-full">
-        {/* Uncomment when components are ready */}
-        {/* <MobileNav /> */}
+       
+        <MobileNav />
         
         <Image
           src="/assets/icons/logo.png"
