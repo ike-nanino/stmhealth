@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
+import Header from "@/components/Header"
 
 const TeamPage = () => {
   const teamMembers = [
@@ -32,7 +33,31 @@ const TeamPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+
+    <main>
+
+         <div className="relative">
+                <Header />
+                <div className="relative w-full h-auto overflow-hidden">
+                  <div className="relative h-[460px] w-full">
+                    <Image
+                      src="/assets/images/massage.jpg"
+                      alt="Contact"
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black/50" />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                      <h1 className="text-6xl md:text-5xl font-regular mb-4 font-secondary ">
+                        Contact Us
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+    <section className=" bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -87,20 +112,8 @@ const TeamPage = () => {
         ))}
       </div>
 
-      {/* Role Filter Tabs */}
-      <div className="flex justify-center gap-4 mb-12">
-        {Object.keys(roleColors).map((role) => (
-          <button
-            key={role}
-            className={`px-6 py-2 rounded-full font-medium transition-colors ${
-              roleColors[role]
-            } hover:opacity-90`}
-          >
-            {role}s
-          </button>
-        ))}
-      </div>
-    </div>
+    </section>
+    </main>
   )
 }
 

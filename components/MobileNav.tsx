@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import {config} from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import Image from "next/image";
 config.autoAddCss = false;
 
 const links = [
@@ -23,10 +24,6 @@ const links = [
         name: 'TEAM',
         path: '/team',
     },
-    {
-        name: 'TREATMENTS',
-        path: '/treatments',
-    }, 
     {
         name: 'CONTACT',
         path: '/contact',
@@ -54,10 +51,16 @@ function MobileNav() {
       </SheetTrigger>
       <SheetContent
         side="left"
-        className="flex flex-col bg-white border-none shadow-none w-[280px] h-screen"
+        className="flex flex-col bg-black/80 border-none shadow-none w-[280px] h-screen"
       >
-        <SheetTitle className="sr-only">
-          Legal Echo
+        <SheetTitle>
+           <Image
+                      src="/assets/icons/logo.png"
+                      width={40}
+                      height={40}
+                      alt="logo"
+                      className="object-cover mb-6"
+                    />
         </SheetTitle>
 
         <nav className="flex flex-col justify-center items-center gap-8">
@@ -67,8 +70,8 @@ function MobileNav() {
                 href={link.path}
                 key={index}
                 className={`${
-                  link.path === pathname && "text-gold font-semibold"
-                } text-xl text-black capitalize hover:text-gold/50 ease-in duration-500`}
+                  link.path === pathname && "text-green-700 font-semibold"
+                } text-xl text-white capitalize hover:text-green-800 ease-in duration-500`}
                 onClick={handleLinkClick}
               >
                 {link.name}
