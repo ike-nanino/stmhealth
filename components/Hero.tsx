@@ -95,7 +95,7 @@ const Hero = () => {
         onClick={prevSlide}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/40 p-4 rounded-full hover:bg-black/70 transition-colors text-white"
+        className="absolute left-4 top-2/3 md:top-1/2 transform -translate-y-1/2 bg-black/40 p-4 rounded-full hover:bg-black/70 transition-colors text-white"
       >
         <svg
           className="w-6 h-6"
@@ -116,7 +116,7 @@ const Hero = () => {
         onClick={nextSlide}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/40 p-4 rounded-full hover:bg-black/70 transition-colors text-white"
+        className="absolute right-4 top-2/3 md:top-1/2 transform -translate-y-1/2 bg-black/40 p-4 rounded-full hover:bg-black/70 transition-colors text-white"
       >
         <svg
           className="w-6 h-6"
