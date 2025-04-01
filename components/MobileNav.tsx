@@ -51,7 +51,7 @@ function MobileNav() {
       </SheetTrigger>
       <SheetContent
         side="left"
-        className="flex flex-col bg-black border-none shadow-none w-[280px] h-screen"
+        className="flex flex-col bg-white border-none shadow-none w-[280px] h-screen"
       >
         <SheetTitle>
            <Image
@@ -63,7 +63,7 @@ function MobileNav() {
                     />
         </SheetTitle>
 
-        <nav className="flex flex-col justify-center items-center gap-8">
+        <nav className="flex flex-col justify-center text-xl text-black items-center gap-8">
           {links.map((link, index) => {
             return (
               <Link
@@ -71,7 +71,7 @@ function MobileNav() {
                 key={index}
                 className={`${
                   link.path === pathname && "text-green-700 font-semibold"
-                } text-xl text-white capitalize hover:text-green-800 ease-in duration-500`}
+                }  capitalize hover:text-green-800 ease-in duration-500`}
                 onClick={handleLinkClick}
               >
                 {link.name}

@@ -18,7 +18,7 @@ const faqData = [
     {
       question: "What can I expect for my first treatment/follow-ing treatments?",
       answer:
-        "If it is your first treatment, your practitioner will go through an initial assessment of your symptoms and complaints. Specific questions and tests will help determine a treatment plan to follow. Pain can sometimes be normal in early sessions depending on the severity of your symptoms. Your practitioner will discuss and address any questions and concerns and obtain consent from you before starting any type of treatment. If you are not comfortable with anything, you won't be forced to do it!",
+        "If it is your first treatment, your practitioner will go through an initial assessment of your symptoms and complaints. Specific questions and tests will help determine a treatment plan to follow. Pain can sometimes be normal in early sessions depending on the severity of your symptoms. Your practitioner will discuss and address any questions and concerns and obtain consent from you before starting any type of treatment.",
     },
     {
       question: "Do you do direct billing?",
