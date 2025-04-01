@@ -43,8 +43,8 @@ function Contact() {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           <div className='xl:h-[54%] order-2 xl:order-none'>
             <form className='flex flex-col gap-6 p-4 md:p-10 bg-gold rounded-xl'>
-              <h3 className='text-4xl text-accent text-center'>Secure Your Future, Discover New Possibilities</h3>
-              <p className='text-white/60 text-center'>Take the next step toward safeguarding your most valuable assets. Fill out the form below, and let us guide you to a world of unmatched protection and exclusive benefits.</p>
+              <h3 className='text-4xl text-black text-center'>Secure Your Spot, Ask Us Anything</h3>
+              <p className='text-black/85 text-center'> Reach Out To Us</p>
 
               <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                 <Input name="firstName" type='text' placeholder='First Name' required />

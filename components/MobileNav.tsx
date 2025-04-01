@@ -45,13 +45,13 @@ function MobileNav() {
           className="flex justify-center items-center"
           onClick={() => setIsOpen(!isOpen)}
         >
-            <FontAwesomeIcon icon={faBars} className="text-base font-semibold text-grey-400" />
+            <FontAwesomeIcon icon={faBars} className="text-lg font-semibold text-grey-400" />
           
         </button>
       </SheetTrigger>
       <SheetContent
         side="left"
-        className="flex flex-col bg-black/80 border-none shadow-none w-[280px] h-screen"
+        className="flex flex-col bg-black border-none shadow-none w-[280px] h-screen"
       >
         <SheetTitle>
            <Image
@@ -59,7 +59,7 @@ function MobileNav() {
                       width={40}
                       height={40}
                       alt="logo"
-                      className="object-cover mb-6"
+                      className="object-cover my-6 mx-auto"
                     />
         </SheetTitle>
 
