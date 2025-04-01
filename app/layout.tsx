@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { League_Spartan } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 
 
 const spartan = League_Spartan({ 
@@ -28,6 +29,8 @@ export default function RootLayout({
       >
        
         {children}
+
+        <Footer />
       </body>
     </html>
   );
