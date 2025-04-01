@@ -17,19 +17,19 @@ const links = [
         path: '/about',
     },
     {
-        name: 'Team',
+        name: 'TEAM',
         path: '/team',
     },
     {
-        name: 'Treatments',
+        name: 'TREATMENTS',
         path: '/treatments',
     },
     {
-        name: 'Blog',
+        name: 'BLOG',
         path: '/blog',
     }, 
     {
-        name: 'Contact',
+        name: 'CONTACT',
         path: '/contact',
     }, 
     
@@ -48,7 +48,7 @@ function NavBar() {
             <Link 
             key={index} 
             href={link.path}
-            className={`${link.path === pathname && 'text-green-700 text-sm'} capitalize hover:text-green-800 text-xs ease-in duration-500`}
+            className={`${link.path === pathname && 'text-green-700 text-lg'} capitalize hover:text-green-800 text-base ease-in duration-500`}
             prefetch={true}
             >{link.name}</Link>
         )

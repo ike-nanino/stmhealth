@@ -1,6 +1,7 @@
 import AboutUs from "@/components/AboutUs";
 import Hero from "@/components/Hero";
 import Header from "@/components/Header";
+import Careers from "@/components/Careers";
 import Services from "@/components/Services";
 import TeamSection from "@/components/TeamSection";
 
@@ -11,12 +12,7 @@ export default function Home() {
       <Hero />
       <Header />
 
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Our Services</h2>
-          {/* Your services content */}
-        </div>
-      </section>
+      <Careers />
 
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
