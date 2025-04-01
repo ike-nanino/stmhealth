@@ -69,10 +69,11 @@ function Header() {
             className="object-cover mr-8"
           />
           
-          <div className="hidden lg:flex">
+        </div>
+
+        <div className="hidden lg:flex">
             <NavBar />
           </div>
-        </div>
         
         <div className="bg-green-700 hidden lg:flex p-2 mr-4 cursor-pointer text-xs hover:bg-green-800 transition-colors duration-300">
           Book Now

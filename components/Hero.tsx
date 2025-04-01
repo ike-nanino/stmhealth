@@ -30,7 +30,7 @@ const Hero = () => {
   }, [images.length]);
 
   useEffect(() => {
-    const slideInterval = setInterval(autoSlide, 5000); // Change slide every 5 seconds
+    const slideInterval = setInterval(autoSlide, 7000); // Change slide every 5 seconds
     
     return () => clearInterval(slideInterval); // Clean up on unmount
   }, [autoSlide]);
@@ -82,13 +82,7 @@ const Hero = () => {
                 />
                 
                 {/* Text Overlay with improved animation */}
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                  <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.4, duration: 0.6 }}
-                    className="text-center text-white max-w-2xl px-4"
-                  >
+                <div className="absolute inset-0 flex items-center justify-center">     
                     <h1 className="text-4xl md:text-6xl font-bold mb-4">
                       {img.title}
                     </h1>
@@ -96,7 +90,7 @@ const Hero = () => {
                     <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-lg transition-colors duration-300 transform hover:scale-105">
                       Learn More
                     </button>
-                  </motion.div>
+               
                 </div>
               </div>
             </motion.div>
