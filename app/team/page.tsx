@@ -41,10 +41,11 @@ const TeamPage = () => {
                 <div className="relative w-full h-auto overflow-hidden">
                   <div className="relative h-[460px] w-full">
                     <Image
-                      src="/assets/images/massage.jpg"
+                      src="/assets/images/teampic.jpg"
                       alt="Contact"
                       fill
                       className="object-cover"
+                      priority
                     />
                     <div className="absolute inset-0 bg-black/50" />
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
