@@ -9,7 +9,7 @@ const Hero = () => {
   const images = [
     {
       src: '/assets/images/massage.jpg',
-      title: 'Professional Legal Solutions',
+      title: 'Legal Solutions',
       text: 'Expert legal services tailored to your needs',
     },
     {
@@ -24,15 +24,13 @@ const Hero = () => {
     },
   ];
 
-  // Auto-sliding functionality
   const autoSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   }, [images.length]);
 
   useEffect(() => {
-    const slideInterval = setInterval(autoSlide, 7000); // Change slide every 5 seconds
-    
-    return () => clearInterval(slideInterval); // Clean up on unmount
+    const slideInterval = setInterval(autoSlide, 7000);
+    return () => clearInterval(slideInterval);
   }, [autoSlide]);
 
   const nextSlide = () => {
@@ -43,7 +41,6 @@ const Hero = () => {
     setCurrentSlide((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
-  // Improved indicator dots for slide tracking
   const SlideIndicators = () => (
     <div className="absolute bottom-8 left-0 right-0 flex justify-center gap-2 z-10">
       {images.map((_, index) => (
@@ -62,43 +59,38 @@ const Hero = () => {
   return (
     <section className="relative overflow-hidden h-[600px] md:h-[850px] lg:h-screen pt-0">
       <AnimatePresence initial={false} custom={currentSlide}>
-        {images.map((img, index) => (
-          currentSlide === index && (
-            <motion.div
-              key={index}
-              initial={{  x: 100 }} // Always slide from right
-              animate={{ x: 0 }}
-              exit={{  x: -100 }} // Always exit to left
-              transition={{ duration: 0.7, ease: "easeInOut" }}
-              className="absolute inset-0"
-            >
-              <div className="relative h-full w-full">
-                <Image
-                  src={img.src}
-                  alt={`Hero Image ${index + 1}`}
-                  fill
-                  className="object-cover"
-                  priority
-                />
-                
-                {/* Text Overlay with improved animation */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center">     
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
-                      {img.title}
-                    </h1>
-                    <p className="text-lg md:text-xl mb-8 text-white">{img.text}</p>
-                    <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-lg transition-colors duration-300 transform hover:scale-105">
-                      Learn More
-                    </button>
-               
-                </div>
-              </div>
-            </motion.div>
-          )
-        ))}
+        <motion.div
+          key={currentSlide}
+          initial={{ x: '100%' }}
+          animate={{ x: 0 }}
+          exit={{ x: '-100%' }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
+          className="absolute inset-0"
+        >
+          <div className="relative h-full w-full">
+            <Image
+              src={images[currentSlide].src}
+              alt={`Hero Image ${currentSlide + 1}`}
+              fill
+              className="object-cover"
+              priority
+            />
+            
+            <div className="absolute inset-0 flex flex-col items-center justify-center">     
+              <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
+                {images[currentSlide].title}
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-white">
+                {images[currentSlide].text}
+              </p>
+              <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-lg transition-colors duration-300 transform hover:scale-105">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </motion.div>
       </AnimatePresence>
 
-      {/* Navigation Arrows with improved styling */}
       <motion.button
         onClick={prevSlide}
         whileHover={{ scale: 1.1 }}
@@ -141,7 +133,6 @@ const Hero = () => {
         </svg>
       </motion.button>
 
-      {/* Slide indicators */}
       <SlideIndicators />
     </section>
   );
