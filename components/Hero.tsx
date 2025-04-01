@@ -19,7 +19,7 @@ const Hero = () => {
     },
     {
       src: '/assets/images/kinesiology.jpg',
-      title: 'Chiropractic Kinesiology',
+      title: 'Kinesiology',
       text: 'Stiffness and pain don’t have to be normal. Experience gentle, non-invasive care tailored to your unique needs',
     },
   ];
