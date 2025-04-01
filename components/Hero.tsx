@@ -82,11 +82,11 @@ const Hero = () => {
                 />
                 
                 {/* Text Overlay with improved animation */}
-                <div className="absolute inset-0 flex items-center justify-center">     
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4">
+                <div className="absolute inset-0 flex flex-col items-center justify-center">     
+                    <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
                       {img.title}
                     </h1>
-                    <p className="text-lg md:text-xl mb-8">{img.text}</p>
+                    <p className="text-lg md:text-xl mb-8 text-white">{img.text}</p>
                     <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-lg transition-colors duration-300 transform hover:scale-105">
                       Learn More
                     </button>
