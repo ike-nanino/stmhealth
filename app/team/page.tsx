@@ -16,8 +16,8 @@ const TeamPage = () => {
     
     // RMTs
     { id: 4, name: "Emily Rodriguez", role: "RMT", img: "/assets/images/team/pic3.jpg" },
-    { id: 5, name: "James Wilson", role: "RMT", img: "/assets/images/team/pic2.jpg" },
-    { id: 6, name: "Sophia Nguyen", role: "RMT", img: "/assets/images/team/pic4.jpg" },
+    { id: 5, name: "Sophia Nguyen", role: "RMT", img: "/assets/images/team/pic4.jpg" },
+    { id: 6, name: "James Wilson", role: "RMT", img: "/assets/images/team/pic6.jpg" },
     { id: 7, name: "Lucia Martin", role: "RMT", img: "/assets/images/team/pic1.jpg" },
     
     // Physiotherapists
@@ -49,7 +49,7 @@ const TeamPage = () => {
                     <div className="absolute inset-0 bg-black/50" />
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
                       <h1 className="text-6xl md:text-5xl font-regular mb-4 font-secondary ">
-                        Contact Us
+                        Our Team
                       </h1>
                     </div>
                   </div>
@@ -87,7 +87,7 @@ const TeamPage = () => {
                 src={member.img}
                 alt={member.name}
                 fill
-                className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                className="object-cover transition-all duration-500"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent" />

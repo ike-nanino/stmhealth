@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Address Section */}
           <div>
             <h3 className="text-green-600 font-semibold uppercase mb-4">Address</h3>
-            <p>EISEN & CO LEGAL PRACTITIONERS</p>
+            <p>Strength Through Motion | STM</p>
             <p>#150-2251 No. 5 Road Richmond, BC V6X2S8</p>
             <p className="mt-4">admin@stmhealth.ca</p>
             <a href="tel:+1604-630-8815">604-630-8815</a>
@@ -18,12 +18,18 @@ export default function Footer() {
           <div>
             <h3 className="text-green-600 font-semibold uppercase mb-4">Treatments</h3>
             <ul>
-              <li>
-              Chiropatic</li>
-              <li>
-              Kinesiology</li>
-              <li>Physiotherapy</li>
-              <li>Massage Therapy</li>
+                <Link href='/treatments'>
+                <li>Chiropatic</li>
+                </Link>
+                <Link href='/treatments'>
+                <li>Kinesiology</li>
+                </Link>
+                <Link href='/treatments'>
+                <li>Physiotherapy</li>
+                </Link>
+                <Link href='/treatments'>
+                <li>Massage Therapy</li>
+                </Link>
               
             </ul>
           </div>
