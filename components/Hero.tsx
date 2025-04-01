@@ -9,18 +9,18 @@ const Hero = () => {
   const images = [
     {
       src: '/assets/images/massage.jpg',
-      title: 'Legal Solutions',
-      text: 'Expert legal services tailored to your needs',
+      title: 'Massage Therapy',
+      text: 'Chronic tension? Our therapeutic massage targets knotted muscles and quiets your mind. Walk out lighter',
     },
     {
       src: '/assets/images/physiotherapy.jpg',
-      title: '24/7 Legal Support',
-      text: 'Round-the-clock assistance for urgent matters',
+      title: 'Physiotherapy',
+      text: 'Pain-free living isn’t a dream. With science-backed therapy, you’ll get back to doing what you love.',
     },
     {
       src: '/assets/images/kinesiology.jpg',
-      title: 'Experienced Attorneys',
-      text: 'Decades of combined legal experience',
+      title: 'Chiropractic Kinesiology',
+      text: 'Stiffness and pain don’t have to be normal. Experience gentle, non-invasive care tailored to your unique needs',
     },
   ];
 
@@ -84,7 +84,7 @@ const Hero = () => {
                 {images[currentSlide].text}
               </p>
               <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-lg transition-colors duration-300 transform hover:scale-105">
-                Learn More
+                Book Appointment
               </button>
             </div>
           </div>

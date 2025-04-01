@@ -3,7 +3,7 @@ import Image from "next/image";
  function BlogCard() {
   return (
 
-    <section className="grid grid-cols-1 md:grid-cols-3 gap-6 px-8">
+    <section className="grid grid-cols-1 md:grid-cols-3 gap-6 px-8 mb-4">
     <div className="w-full md:max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
      
       <div className="p-4">

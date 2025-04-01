@@ -26,10 +26,6 @@ const links = [
     {
         name: 'TREATMENTS',
         path: '/treatments',
-    },
-    {
-        name: 'BLOG',
-        path: '/blog',
     }, 
     {
         name: 'CONTACT',

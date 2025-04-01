@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 function Header() {
 
-    const [scrolled, setScrolled] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,34 +31,27 @@ function Header() {
 
   return (
     <header
-      className={`${
-        scrolled ? "bg-black shadow-md" : "bg-transparent"
-      } text-white p-4 fixed top-0 left-0 right-0 z-50 
-      transition-all duration-300 ${
-        scrolled ? "h-22" : "h-22"
-      }`}
+      className={`${scrolled ? "bg-black shadow-md" : "bg-transparent"
+        } text-white p-4 fixed top-0 left-0 right-0 z-50 
+      transition-all duration-300 ${scrolled ? "h-18" : "h-18"
+        }`}
     >
       <div className="lg:hidden flex items-center justify-between w-full">
-       
-        <MobileNav />
-        
-        <Image
-          src="/assets/icons/logo.png"
-          width={40}
-          height={40}
-          alt="logo"
-          className="object-cover mr-4"
-        />
-        
-        {/* Uncomment when component is ready */}
-        {/* <PhoneTab /> */}
-        
+
         {/* Added mobile book now button */}
-        <div className="bg-green-700 p-2 cursor-pointer text-xs">
+        <div className="bg-green-700 p-2 cursor-pointer text-xs md:p-4 md:text-sm">
           Book Now
         </div>
+
+
+
+        <MobileNav />
+
+
+
+
       </div>
-      
+
       <div className="lg:flex items-center justify-between hidden w-full">
         <div className="flex items-center">
           <Image
@@ -68,13 +61,13 @@ function Header() {
             alt="logo"
             className="object-cover mr-8"
           />
-          
+
         </div>
 
         <div className="hidden lg:flex">
-            <NavBar />
-          </div>
-        
+          <NavBar />
+        </div>
+
         <div className="bg-green-700 hidden lg:flex p-2 mr-4 cursor-pointer text-xs hover:bg-green-800 transition-colors duration-300">
           Book Now
         </div>

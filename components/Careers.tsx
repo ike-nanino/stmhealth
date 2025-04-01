@@ -32,7 +32,7 @@ const Careers = () => {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Left Column */}
           <div className="space-y-12">
-            <motion.div variants={fadeIn} className="p-6 bg-gray-50 rounded-xl">
+            <motion.div variants={fadeIn} className="p-6 bg-gray-200 rounded-xl">
               <div className="flex items-center gap-3 mb-4">
                 <Briefcase className="w-8 h-8 text-green-600" />
                 <h2 className="text-2xl font-semibold text-gray-900">Our Philosophy</h2>
@@ -40,11 +40,11 @@ const Careers = () => {
               <p className="text-gray-600">
                 We are not a factory/volume style clinic. We provide experienced-based care 
                 through a one-to-one model. Join us in delivering personalized rehabilitation 
-                and wellness services.
+                and wellness services. You will never leave the same after you visit us.  You will never leave the same after you visit us.
               </p>
             </motion.div>
 
-            <motion.div variants={fadeIn} className="p-6 bg-gray-50 rounded-xl">
+            <motion.div variants={fadeIn} className="p-6 bg-gray-200 rounded-xl">
               <div className="flex items-center gap-3 mb-4">
                 <Users className="w-8 h-8 text-blue-600" />
                 <h2 className="text-2xl font-semibold text-gray-900">Current Openings</h2>
@@ -62,8 +62,8 @@ const Careers = () => {
 
           {/* Right Column */}
           <div className="space-y-12">
-            <motion.div variants={fadeIn} className="p-6 bg-gray-50 rounded-xl">
-              <div className="flex items-center gap-3 mb-4">
+            <motion.div variants={fadeIn} className="p-6 bg-gray-200 rounded-xl">
+              <div className="flex items-center gap-3 mb-2">
                 <Gem className="w-8 h-8 text-purple-600" />
                 <h2 className="text-2xl font-semibold text-gray-900">Why Choose STM?</h2>
               </div>
@@ -83,12 +83,12 @@ const Careers = () => {
               </ul>
             </motion.div>
 
-            <motion.div variants={fadeIn} className="p-6 bg-gray-50 rounded-xl">
-              <div className="flex items-center gap-3 mb-4">
+            <motion.div variants={fadeIn} className="p-6 bg-gray-200 rounded-xl">
+              <div className="flex items-center gap-3 mb-4 md:mb-11">
                 <Send className="w-8 h-8 text-blue-600" />
                 <h2 className="text-2xl font-semibold text-gray-900">Join Our Team</h2>
               </div>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-4 md:mb-11">
                 New grad or experienced - all are welcome! We're looking for positive,
                 energetic professionals who value quality patient care.
               </p>
