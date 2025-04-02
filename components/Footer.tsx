@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-black text-gray-200 py-12">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 text-center lg:text-left">
         {/* Address Section */}
-        <div>
+        <div className='mx-auto'>
           <h3 className="text-green-600 font-semibold uppercase mb-4">Address</h3>
           <p>Strength Through Motion | STM</p>
           <p>#150-2251 No. 5 Road Richmond, BC V6X2S8</p>
