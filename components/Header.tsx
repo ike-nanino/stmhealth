@@ -68,7 +68,7 @@ function Header() {
           <NavBar />
         </div>
 
-        <div className="bg-green-700 hidden lg:flex p-2 md:px-4 md:py-3 mr-4 cursor-pointer text-xs md:text-base h- hover:bg-green-800 transition-colors duration-300">
+        <div className="bg-green-700 hidden lg:flex p-2 md:px-4 md:py-2 mr-4 cursor-pointer text-xs md:text-base h- hover:bg-green-800 transition-colors duration-300">
           Book Now
         </div>
       </div>

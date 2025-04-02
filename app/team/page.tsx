@@ -83,12 +83,12 @@ const TeamPage = () => {
             transition={{ delay: index * 0.1 }}
             className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group"
           >
-            <div className="relative h-72">
+            <div className="relative h-72 ">
               <Image
                 src={member.img}
                 alt={member.name}
                 fill
-                className="object-cover transition-all duration-500"
+                className="object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent" />
@@ -100,11 +100,11 @@ const TeamPage = () => {
             <div className="p-6 text-center">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">{member.name}</h3>
               <div className="flex justify-center space-x-2">
-                <button className="text-blue-600 hover:text-blue-800 transition-colors">
+                <button className="text-blue-600 hover:text-blue-800 transition-colors cursor-pointer">
                   View Profile
                 </button>
                 <span className="text-gray-300">•</span>
-                <button className="text-blue-600 hover:text-blue-800 transition-colors">
+                <button className="text-blue-600 hover:text-blue-800 transition-colors cursor-pointer">
                   Book Now
                 </button>
               </div>
