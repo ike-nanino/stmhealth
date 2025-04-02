@@ -1,13 +1,11 @@
-'use client'
 
-import { useState } from 'react';
 import Image from "next/image";
-import MobileNav from "@/components/MovileNav";
-import NavBar from "@/components/NavBar";
+
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import Header from '@/components/Header';
+import GoogleMapComponent from '@/components/GoogleMapsComponent';
 
 
 
@@ -63,6 +61,10 @@ function Contact() {
           </div>
         </div>
       </div>
+
+      {/* <div className="my-6">
+        <GoogleMapComponent />
+      </div> */}
       
     </div>
   )
