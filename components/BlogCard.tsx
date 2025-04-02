@@ -3,8 +3,13 @@ import Image from "next/image";
  function BlogCard() {
   return (
 
-    <section className="grid grid-cols-1 md:grid-cols-3 gap-6 px-8 mb-4">
-    <div className="w-full md:max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+    <section >
+      <div className="flex justify-center items-center mt-10 mb-6">
+        <h1 className="text-3xl font-bold text-green-700">Latest News</h1>
+      </div>
+      <div className="flex justify-center items-center mb-4">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 px-8 mb-4">
+    <div className="w-full md:max-w-lg bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
      
       <div className="p-4">
      
@@ -34,7 +39,7 @@ import Image from "next/image";
       </div>
     </div>
 
-    <div className="w-full md:max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+    <div className="w-full md:max-w-lg bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
    
       <div className="p-4">
       
@@ -64,7 +69,7 @@ import Image from "next/image";
       </div>
     </div>
 
-    <div className="w-full md:max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+    <div className="w-full md:max-w-lg bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
  
       <div className="p-4">
   
@@ -89,6 +94,8 @@ import Image from "next/image";
           className="object-cover"
         />
       </div>
+    </div>
+    </div>
     </div>
 
     </section>

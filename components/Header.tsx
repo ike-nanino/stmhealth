@@ -39,7 +39,7 @@ function Header() {
       <div className="lg:hidden flex items-center justify-between w-full">
 
         {/* Added mobile book now button */}
-        <div className="bg-green-700 p-2 cursor-pointer text-xs md:p-4 md:text-sm">
+        <div className="bg-green-700 p-2 cursor-pointer text-xs lg:p-4 lg:text-sm">
           Book Now
         </div>
 
@@ -68,7 +68,7 @@ function Header() {
           <NavBar />
         </div>
 
-        <div className="bg-green-700 hidden lg:flex p-2 md:px-4 md:py-3 mr-4 cursor-pointer text-xs md:text-base hover:bg-green-800 transition-colors duration-300">
+        <div className="bg-green-700 hidden lg:flex p-2 md:px-4 md:py-3 mr-4 cursor-pointer text-xs md:text-base h- hover:bg-green-800 transition-colors duration-300">
           Book Now
         </div>
       </div>

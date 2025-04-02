@@ -29,7 +29,7 @@ const Careers = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12">
           {/* Left Column */}
           <div className="space-y-12">
             <motion.div variants={fadeIn} className="p-6 bg-gray-200 rounded-xl">
@@ -103,10 +103,10 @@ const Careers = () => {
           </div>
         </div>
 
-        <motion.div variants={fadeIn} className="mt-16 text-center text-gray-600">
+        {/* <motion.div variants={fadeIn} className="mt-16 text-center text-gray-600">
           <p>Job Types: Full-time, Part-time, Permanent</p>
           <p className="mt-2">Cover letters appreciated but not required</p>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   )

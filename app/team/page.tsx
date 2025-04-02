@@ -18,10 +18,10 @@ const TeamPage = () => {
     { id: 4, name: "Emily Rodriguez", role: "RMT", img: "/assets/images/team/pic3.jpg" },
     { id: 5, name: "Sophia Nguyen", role: "RMT", img: "/assets/images/team/pic4.jpg" },
     { id: 6, name: "James Wilson", role: "RMT", img: "/assets/images/team/pic6.jpg" },
-    { id: 7, name: "Lucia Martin", role: "RMT", img: "/assets/images/team/pic1.jpg" },
+    { id: 7, name: "Lucia Martin", role: "RMT", img: "/assets/images/team/pic2.jpg" },
     
     // Physiotherapists
-    { id: 8, name: "Dr. Olivia Smith", role: "Physiotherapist", img: "/assets/images/team/pic2.jpg" },
+    { id: 8, name: "Dr. Olivia Smith", role: "Physiotherapist", img: "/assets/images/team/pic1.jpg" },
     { id: 9, name: "Dr. Etel Brown", role: "Physiotherapist", img: "/assets/images/team/pic5.jpg" },
   ]
 
