@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import MobileNav from "./MobileNav";
-import PhoneTab from "./PhoneTab";
 import NavBar from "./NavBar";
 import { useEffect, useState } from "react";
 
@@ -12,29 +11,35 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
+      const isScrolled = window.scrollY > 72;
+      setScrolled(isScrolled);
+    };
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "visible") {
+        handleScroll();
       }
-    }
+    };
 
-    // Add event listener
-    window.addEventListener('scroll', handleScroll)
+    // Initial check when component mounts
+    handleScroll();
 
-    // Remove event listener on cleanup
+    window.addEventListener("scroll", handleScroll);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
+
 
 
   return (
     <header
-      className={`${scrolled ? "bg-black shadow-md" : "bg-transparent"
-        } text-white p-4 fixed top-0 left-0 right-0 z-50 
-      transition-all duration-300 ${scrolled ? "h-18" : "h-18"
-        }`}
+    className={`${scrolled ? "bg-black shadow-md" : "bg-transparent"}
+    text-white p-4 fixed top-0 left-0 right-0 z-50 
+    transition-all duration-300 h-18`}
     >
       <div className="lg:hidden flex items-center justify-between w-full">
 
